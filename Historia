@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>História das Redes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Evolução das Redes de Computadores</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="tecnologias.html">Tecnologias</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section>
+
+        <h2>História das redes de computadores</h2>
+
+        <p>
+            A história das redes de computadores começou a ganhar força
+            durante a década de 1960. Pesquisadores buscavam maneiras
+            mais eficientes de compartilhar informações e recursos entre
+            computadores.
+        </p>
+
+        <p>
+            Um dos principais marcos ocorreu em 1969, quando a ARPANET
+            começou a conectar computadores de instituições de pesquisa
+            nos Estados Unidos.
+        </p>
+
+    </section>
+
+
+    <section class="imagem-section">
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Arpanet_1970.jpg"
+            alt="Mapa da ARPANET"
+        >
+
+        <p>
+            A ARPANET foi uma das principais precursoras da Internet.
+            No final de 1969, quatro computadores já estavam conectados
+            à rede inicial. :contentReference[oaicite:1]{index=1}
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>Linha do tempo</h2>
+
+        <ol>
+
+            <li>
+                <strong>1960:</strong>
+                começam pesquisas relacionadas à comunicação entre
+                computadores.
+            </li>
+
+            <li>
+                <strong>1969:</strong>
+                surge a ARPANET, conectando inicialmente quatro
+                computadores.
+            </li>
+
+            <li>
+                <strong>1970:</strong>
+                o protocolo NCP passa a ser utilizado na ARPANET.
+            </li>
+
+            <li>
+                <strong>1972:</strong>
+                o e-mail começa a se tornar uma importante aplicação
+                das redes.
+            </li>
+
+            <li>
+                <strong>1973:</strong>
+                a Ethernet é desenvolvida no Xerox PARC.
+            </li>
+
+            <li>
+                <strong>1970–1980:</strong>
+                são desenvolvidos conceitos que posteriormente dão
+                origem ao TCP/IP.
+            </li>
+
+            <li>
+                <strong>1980:</strong>
+                redes locais começam a se popularizar em empresas
+                e instituições.
+            </li>
+
+            <li>
+                <strong>1990:</strong>
+                a World Wide Web contribui para a popularização da
+                Internet.
+            </li>
+
+            <li>
+                <strong>2000 em diante:</strong>
+                banda larga, Wi-Fi, smartphones, computação em nuvem
+                e redes móveis transformam a conectividade.
+            </li>
+
+        </ol>
+
+    </section>
+
+
+    <section>
+
+        <h2>Da ARPANET para a Internet</h2>
+
+        <p>
+            Um dos grandes desafios da evolução das redes foi permitir
+            que diferentes redes pudessem se comunicar. O desenvolvimento
+            do TCP/IP foi fundamental para permitir essa interconexão.
+        </p>
+
+        <blockquote>
+            "The Internet is for everyone."
+        </blockquote>
+
+        <p>
+            A partir desse processo, diferentes redes puderam funcionar
+            de maneira integrada, formando a base da Internet moderna.
+            :contentReference[oaicite:2]{index=2}
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>Trabalho sobre Redes de Computadores</p>
+
+</footer>
+
+</body>
+</html>
