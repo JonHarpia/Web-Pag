@@ -1,6 +1,12 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
+    color: #222222;
 }
+
 h1 {
-    color: #2563eb;
+    color: #0066cc;
+}
+
+nav {
+    background-color: #003366;
 }
