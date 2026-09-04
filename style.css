@@ -1,20 +1,20 @@
 h1 {
     color: #0066cc;
 }
-<style>
-  table {
-    border-collapse: collapse; /* Une as bordas das células para não ficarem duplas */
-    width: 100%;               /* Faz a tabela ocupar a largura total do contêiner */
+
+table {
+    border-collapse: collapse;
+    width: 100%;               
     font-family: sans-serif;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;         
+    text-align: left;
   }
 
-  th, td {
-    border: 1px solid #ccc;    /* Cria uma borda cinza de 1px em volta de cada célula */
-    padding: 10px;             /* Adiciona um espaço interno para o texto não colar na borda */
-    text-align: left;          /* Alinha o texto à esquerda */
-  }
+th {
+    background-color: #f2f2f2;
+}
 
-  th {
-    background-color: #f2f2f2; /* Cor de fundo suave para o cabeçalho */
-  }
-</style>
