@@ -1,20 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <title>JON MARQUES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JON MARQUES | Portfólio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #1e293b;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #38bdf8;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .subtitulo {
+            font-size: 0.95em;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background-color: #334155;
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 1.05em;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover {
+            background-color: #0284c7;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(2, 132, 199, 0.4);
+            border-color: #38bdf8;
+        }
+
+        .tag {
+            font-size: 0.75em;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 400;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #64748b;
+        }
+    </style>
 </head>
 <body>
 
-  
-    <h2>PORTFÓLIO</h2>
-        <p>
- <nav>
-        <a href="Atividade.html">Atividade = Listas e Citações<a/>
-            <p>
-        <a href="Tabela.html">Atividade = Tabela<a/>
-            <p>
-        <a href="Volei.html">Atividade = CSS<a/>
-</nav>       
- </body>
+    <div class="container">
+        <header>
+            <h1>JON MARQUES</h1>
+            <p class="subtitulo">Portfólio de Atividades Web</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="Atividade.html">
+                        <span>Listas e Citações</span>
+                        <span class="tag">HTML5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Tabela.html">
+                        <span>Tabelas</span>
+                        <span class="tag">Estrutura</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Volei.html">
+                        <span>CSS</span>
+                        <span class="tag">CSS3</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+</body>
 </html>
