@@ -1,4 +1,4 @@
-/* Reset básico e tipografia */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +12,12 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho e Navegação */
 header {
-    background-color: #0056b3; /* Azul Vôlei */
+    background-color: #0056b3;
     color: #ffffff;
     padding: 25px;
     text-align: center;
-    border-bottom: 5px solid #ffc107; /* Amarelo detalhe */
+    border-bottom: 5px solid #ffc107;
 }
 
 nav {
@@ -42,7 +41,6 @@ nav a:hover {
     border-radius: 4px;
 }
 
-/* Conteúdo Principal */
 main {
     max-width: 950px;
     margin: 30px auto;
@@ -74,7 +72,6 @@ ul, ol {
     margin-bottom: 20px;
 }
 
-/* Imagens */
 img {
     max-width: 100%;
     height: auto;
@@ -83,7 +80,6 @@ img {
     display: block;
 }
 
-/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -108,7 +104,6 @@ tr:nth-child(even) {
     background-color: #f7fafc;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
