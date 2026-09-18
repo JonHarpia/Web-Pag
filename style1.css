@@ -5,22 +5,6 @@ body {
     margin: 20px;
 }
 
-.sessao {
-    display: none;
-    margin-top: 15px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-
-.sessao:target {
-    display: block;
-}
-
-#inicio {
-    display: block;
-}
-
 #foto-espaco {
     width: 280px;
     border-radius: 8px;
@@ -36,8 +20,16 @@ body {
     border-radius: 4px;
 }
 
-.btn-menu:hover {
+.ativo {
     background-color: #e74c3c;
+}
+
+.btn-menu:hover {
+    background-color: #34495e;
+}
+
+tr:nth-child(even) {
+    background-color: #e2e8f0;
 }
 
 table {
