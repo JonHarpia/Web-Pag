@@ -1,225 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmos & Exploração Espacial</title>
-    <!-- Fonte externa Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href=style1.css>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Site de Astronomia</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
-    
-    <body>
+<body>
 
-    <!-- CABEÇALHO PRINCIPAL (Usando ID #main-header) -->
-    <header id="main-header">
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M2 12h20"></path>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            <h2 style="margin: 0; font-size: 1.4rem; color: var(--text-light);">COSMOS<span style="color: var(--accent);">.EXPLORE</span></h2>
-        </div>
-        
-        <!-- NAVEGAÇÃO ENTRE PÁGINAS SIMULADAS -->
-        <nav class="nav-container">
-            <button class="btn-nav active" onclick="switchPage('inicio', this)">Início</button>
-            <button class="btn-nav" onclick="switchPage('planetas', this)">Planetas & Missões</button>
+    <header>
+        <h1>Exploração Espacial</h1>
+        <nav>
+            <a href="#inicio" class="btn-menu">Início</a>
+            <a href="#planetas" class="btn-menu">Planetas</a>
         </nav>
     </header>
 
-    <main class="container">
-        <!-- ====================================================================
-             PÁGINA 1: INÍCIO
-             ==================================================================== -->
-        <section id="page-inicio" class="page-section active-page">
-            
-            <!-- BANNER HERO (Usando ID #banner-principal) -->
-            <div id="banner-principal">
-                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">A Fronteira Final</h1>
-                <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
-                    Explore os mistérios do universo, das estrelas distantes aos planetas do nosso Sistema Solar.
-                </p>
-            </div>
+    <section id="inicio" class="sessao">
+        <h2>Bem-vindo ao Nosso Site!</h2>
+        <p>Esta é a primeira sessão do site sobre o universo e exploração espacial.</p>
 
-            <!-- IMAGEM OBRIGATÓRIA -->
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop" 
-                 alt="Planeta Terra visto do espaço com luzes de redes e tecnologia" 
-                 class="hero-img"
-                 onerror="this.src='https://placehold.co/1200x400/0f172a/06b6d4?text=Exploracao+Espacial'">
+        <img id="foto-espaco" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400" alt="Espaço">
 
-            <h2 style="margin-top: 40px; border-left: 4px solid var(--accent); padding-left: 12px;">Por que explorar o espaço?</h2>
-            
-            <!-- LISTA OBRIGATÓRIA (Usando classes e pseudoelementos) -->
-            <ul>
-                <li class="custom-list-item">
-                    <span class="highlight-text">Avanço Científico:</span> Desenvolvimento de novas tecnologias que beneficiam a medicina, telecomunicações e materiais na Terra.
-                </li>
-                <li class="custom-list-item">
-                    <span class="highlight-text">Compreensão Origem:</span> Estudo da formação de planetas, galáxias e a busca por vida extraterrestre.
-                </li>
-                <li class="custom-list-item">
-                    <span class="highlight-text">Sustentabilidade Futura:</span> Identificação de recursos em asteroides e potenciais novos lares para a humanidade.
-                </li>
-                <li class="custom-list-item">
-                    <span class="highlight-text">Cooperação Global:</span> União de nações em prol de objetivos pacíficos e científicos comuns.
-                </li>
-            </ul>
+        <h3>O que você vai encontrar:</h3>
+        <ul>
+            <li>Informações sobre planetas</li>
+            <li>Curiosidades do espaço</li>
+            <li>Dados astronômicos</li>
+        </ul>
+    </section>
 
-            <!-- CARDS INFORMATIVOS (Uso da classe .card e efeito :hover) -->
-            <div class="grid-3">
-                <div class="card">
-                    <h3 style="color: var(--accent);">Telescópio James Webb</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        O mais poderoso telescópio espacial já construído, capaz de observar as primeiras galáxias formadas após o Big Bang.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--accent);">Programa Artemis</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        A iniciativa da NASA para retornar seres humanos à Lua, estabelecendo uma presença sustentável para futuras missões a Marte.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--accent);">Sondagem Interstelar</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        Naves como Voyager 1 e 2 continuam enviando dados valiosos enquanto navegam além dos limites do nosso sistema solar.
-                    </p>
-                </div>
-            </div>
+    <section id="planetas" class="sessao">
+        <h2>Tabela dos Planetas</h2>
+        <p>Esta é a segunda sessão com informações sobre o sistema solar.</p>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <p>Quer conferir os dados dos planetas e missões?</p>
-                <button class="btn-nav" onclick="switchPage('planetas', document.querySelectorAll('.btn-nav')[1])">
-                    Ver Tabela de Planetas &rarr;
-                </button>
-            </div>
-        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Planeta</th>
+                    <th>Tipo</th>
+                    <th>Luas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercúrio</td>
+                    <td>Rochoso</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Vênus</td>
+                    <td>Rochoso</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Terra</td>
+                    <td>Rochoso</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Júpiter</td>
+                    <td>Gasoso</td>
+                    <td>95</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <!-- ====================================================================
-             PÁGINA 2: PLANETAS & MISSÕES
-             ==================================================================== -->
-        <section id="page-planetas" class="page-section">
-            <h1 style="border-left: 4px solid var(--primary); padding-left: 12px;">Planetas do Sistema Solar</h1>
-            <p style="color: var(--text-muted); margin-bottom: 30px;">
-                Dados comparativos dos principais corpos celestes do nosso sistema e o status das missões de exploração.
-            </p>
-
-            <!-- TABELA OBRIGATÓRIA (Usando ID #planetas-table e pseudoclasses :nth-child / :hover) -->
-            <div style="overflow-x: auto;">
-                <table id="planetas-table">
-                    <thead>
-                        <tr>
-                            <th>Planeta</th>
-                            <th>Tipo</th>
-                            <th>Diâmetro (km)</th>
-                            <th>Distância do Sol (UA)</th>
-                            <th>Luas</th>
-                            <th>Sondas Principais</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Mercúrio</strong></td>
-                            <td>Rochoso</td>
-                            <td>4.879</td>
-                            <td>0,39</td>
-                            <td>0</td>
-                            <td>MESSENGER, BepiColombo</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Vênus</strong></td>
-                            <td>Rochoso</td>
-                            <td>12.104</td>
-                            <td>0,72</td>
-                            <td>0</td>
-                            <td>Venera, Magellan, Akatsuki</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Terra</strong></td>
-                            <td>Rochoso</td>
-                            <td>12.742</td>
-                            <td>1,00</td>
-                            <td>1</td>
-                            <td>Estação Espacial (ISS), Satélites</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Marte</strong></td>
-                            <td>Rochoso</td>
-                            <td>6.779</td>
-                            <td>1,52</td>
-                            <td>2</td>
-                            <td>Curiosity, Perseverance, Orbiters</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Júpiter</strong></td>
-                            <td>Gigante Gasoso</td>
-                            <td>139.820</td>
-                            <td>5,20</td>
-                            <td>95</td>
-                            <td>Galileo, Juno, JUICE</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Saturno</strong></td>
-                            <td>Gigante Gasoso</td>
-                            <td>116.460</td>
-                            <td>9,58</td>
-                            <td>146</td>
-                            <td>Cassini-Huygens</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- CARD DE RESUMO -->
-            <div class="card" style="margin-top: 30px;">
-                <h3>Curiosidade Astronômica</h3>
-                <p style="color: var(--text-muted); line-height: 1.6;">
-                    Uma <span class="highlight-text">Unidade Astronômica (UA)</span> representa a distância média entre a Terra e o Sol, cerca de 149.600.000 quilômetros. É a unidade de medida padrão utilizada dentro do Sistema Solar.
-                </p>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="btn-nav" onclick="switchPage('inicio', document.querySelectorAll('.btn-nav')[0])">
-                    &larr; Voltar para o Início
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <!-- RODAPÉ PRINCIPAL (Usando ID #footer-principal) -->
-    <footer id="footer-principal">
-        <p>&copy; 2026 Cosmos Exploration - Desenvolvido para o estudo de Seletores CSS e Web Design.</p>
+    <footer>
+        <p>Trabalho de Desenvolvimento Web</p>
     </footer>
 
-    <!-- JS simples apenas para alternar a exibição das páginas (SPA) -->
-    <script>
-        function switchPage(pageId, btnElement) {
-            // Esconde todas as seções
-            const pages = document.querySelectorAll('.page-section');
-            pages.forEach(page => page.classList.remove('active-page'));
-
-            // Remove classe ativa de todos os botões de navegação
-            const navButtons = document.querySelectorAll('.btn-nav');
-            navButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Exibe a página selecionada
-            const targetPage = document.getElementById('page-' + pageId);
-            if (targetPage) {
-                targetPage.classList.add('active-page');
-            }
-
-            // Ativa o botão clicado
-            if (btnElement) {
-                btnElement.classList.add('active');
-            }
-
-            // Rola a página suavemente para o topo
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
