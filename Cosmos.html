@@ -183,30 +183,7 @@
     </footer>
 
     <!-- JS simples apenas para alternar a exibição das páginas (SPA) -->
-    <script>
-        function switchPage(pageId, btnElement) {
-            // Esconde todas as seções
-            const pages = document.querySelectorAll('.page-section');
-            pages.forEach(page => page.classList.remove('active-page'));
 
-            // Remove classe ativa de todos os botões de navegação
-            const navButtons = document.querySelectorAll('.btn-nav');
-            navButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Exibe a página selecionada
-            const targetPage = document.getElementById('page-' + pageId);
-            if (targetPage) {
-                targetPage.classList.add('active-page');
-            }
-
-            // Ativa o botão clicado
-            if (btnElement) {
-                btnElement.classList.add('active');
-            }
-
-            // Rola a página suavemente para o topo
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
     </script>
 </body>
 </html>
