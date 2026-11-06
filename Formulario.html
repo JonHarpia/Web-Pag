@@ -212,5 +212,16 @@
            
          </div>
         </form>
+        <div id="mensagem"></div>
+        <script>
+    function enviarFormulario(event) {
+        event.preventDefault();
+
+        document.getElementById("mensagem").innerHTML =
+        "Cadastro realizado com sucesso!";
+
+        document.querySelector("form").reset();
+    }
+</script>
 </body>
 </html>
