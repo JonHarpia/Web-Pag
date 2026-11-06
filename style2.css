@@ -1,0 +1,89 @@
+
+body {
+    background-color: #171717;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: #00aa66;
+    text-align: center;
+    padding: 25px;
+}
+
+.formulario {
+    background-color: #292929;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #00ff99;
+}
+
+fieldset {
+    border: 1px solid #00aa66;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="color"]):not([type="range"]):not([type="file"]):not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="image"]),
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.opcoes label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.botoes {
+    text-align: center;
+}
+
+.botoes input,
+.botoes button {
+    background-color: #00aa66;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes input:hover,
+.botoes button:hover {
+    background-color: #007744;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #292929;
+    text-align: center;
+    padding: 20px;
+}
