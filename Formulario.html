@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mundo dos Games</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <div class="cabecalho">
+        <h1>MUNDO DOS GAMES</h1>
+        <p>Faça parte da nossa comunidade gamer!</p>
+    </div>
+
+    <!-- Formulário -->
+    <div class="formulario">
+
+        <h2>Cadastro de Jogadores</h2>
+
+        <form action="#" method="post">
+
+            <!-- Dados pessoais -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade">
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horário disponível:</label>
+                    <input type="time" id="horario" name="horario">
+                </div>
+
+                <div class="campo">
+                    <label for="datahora">Data e horário:</label>
+                    <input type="datetime-local" id="datahora" name="datahora">
+                </div>
+
+                <div class="campo">
+                    <label for="mes">Mês de aniversário:</label>
+                    <input type="month" id="mes" name="mes">
+                </div>
+
+                <div class="campo">
+                    <label for="semana">Semana de início:</label>
+                    <input type="week" id="semana" name="semana">
+                </div>
+
+                <div class="campo">
+                    <label for="site">Seu perfil gamer:</label>
+                    <input type="url" id="site" name="site"
+                    placeholder="https://exemplo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="pesquisa">Pesquisar jogo:</label>
+                    <input type="search" id="pesquisa" name="pesquisa">
+                </div>
+
+            </fieldset>
+
+            <!-- Preferências -->
+            <fieldset>
+                <legend>Preferências de jogos</legend>
+
+                <div class="campo">
+                    <label>Estilo de jogo favorito:</label>
+
+                    <div class="opcoes">
+                        <label>
+                            <input type="radio" name="estilo" value="acao">
+                            Ação
+                        </label>
+
+                        <label>
+                            <input type="radio" name="estilo" value="aventura">
+                            Aventura
+                        </label>
+
+                        <label>
+                            <input type="radio" name="estilo" value="esporte">
+                            Esporte
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Plataformas utilizadas:</label>
+
+                    <div class="opcoes">
+                        <label>
+                            <input type="checkbox" name="plataforma" value="pc">
+                            Computador
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="plataforma" value="console">
+                            Console
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="plataforma" value="celular">
+                            Celular
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="cor">Escolha sua cor favorita:</label>
+                    <input type="color" id="cor" name="cor">
+                </div>
+
+                <div class="campo">
+                    <label for="nivel">Nível de experiência:</label>
+                    <input type="range" id="nivel" name="nivel" min="0" max="100">
+                </div>
+
+                <div class="campo">
+                    <label for="foto">Foto do jogador:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+
+                <div class="campo">
+                    <label for="jogo">Jogo favorito:</label>
+
+                    <input type="text" id="jogo" name="jogo" list="lista-jogos">
+
+                    <datalist id="lista-jogos">
+                        <option value="Minecraft">
+                        <option value="GTA">
+                        <option value="FIFA">
+                        <option value="Fortnite">
+                    </datalist>
+                </div>
+
+                <div class="campo">
+                    <label for="plataforma-principal">
+                        Plataforma principal:
+                    </label>
+
+                    <select id="plataforma-principal" name="plataforma-principal">
+                        <option value="">Selecione</option>
+                        <option value="pc">Computador</option>
+                        <option value="playstation">PlayStation</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="celular">Celular</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <!-- Informações adicionais -->
+            <fieldset>
+                <legend>Informações adicionais</legend>
+
+                <div class="campo">
+                    <label for="sobre">Fale um pouco sobre você:</label>
+                    <textarea id="sobre" name="sobre" rows="4"
+                    placeholder="Escreva aqui..."></textarea>
+                </div>
+
+                <div class="campo">
+                    <label>
+                        <input type="checkbox" name="termos" required>
+                        Aceito os termos de cadastro.
+                    </label>
+                </div>
+
+                <!-- Campo oculto -->
+                <input type="hidden" name="origem" value="mundo-dos-games">
+
+                <!-- Elemento output -->
+                <div class="campo">
+                    <label>Exemplo de resultado:</label>
+                    <output name="resultado">Cadastro de jogador</output>
+                </div>
+
+            </fieldset>
+
+            <!-- Botões -->
+            <div class="botoes">
+
+                <input type="submit" value="Enviar cadastro">
+
+                <input type="reset" value="Limpar formulário">
+
+                <input type="button" value="Mensagem"
+                onclick="alert('Bem-vindo ao Mundo dos Games!')">
+
+                <input type="image"
+                alt="Enviar formulário"
+                src="https://placehold.co/100x40/00aa66/ffffff?text=Enviar"
+                width="100" height="40">
+
+                <button type="button"
+                onclick="alert('Obrigado por visitar nossa página!')">
+                    Clique aqui
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <p>Projeto desenvolvido em HTML e CSS - 2026</p>
+    </div>
+
+</body>
+</html>
