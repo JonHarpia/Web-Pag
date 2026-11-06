@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Mundo dos Games</title>
+    <title>Mundo dos Jogos</title>
 
     <style>
         body {
@@ -13,7 +13,7 @@
             margin: 0;
         }
 
-        /* FIXED */
+        /* POSIÇÃO FIXA */
         .menu {
             position: fixed;
             top: 0;
@@ -23,7 +23,7 @@
             text-align: center;
         }
 
-        /* RELATIVE */
+        /* POSIÇÃO RELATIVA */
         .titulo {
             position: relative;
             top: 60px;
@@ -32,7 +32,7 @@
             padding: 20px;
         }
 
-        /* STATIC */
+        /* POSIÇÃO PADRÃO */
         .caixa1 {
             position: static;
             background: #333;
@@ -40,7 +40,7 @@
             margin: 20px;
         }
 
-        /* ABSOLUTE */
+        /* POSIÇÃO ABSOLUTA */
         .container {
             position: relative;
             background: #333;
@@ -56,7 +56,7 @@
             padding: 15px;
         }
 
-        /* FLEX */
+        /* ORGANIZAÇÃO FLEXÍVEL */
         .jogos {
             display: flex;
             justify-content: center;
@@ -70,8 +70,8 @@
             border-radius: 10px;
         }
 
-        /* GRID */
-        .grid {
+        /* ORGANIZAÇÃO EM GRADE */
+        .grade {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
@@ -84,7 +84,7 @@
             text-align: center;
         }
 
-        /* STICKY */
+        /* POSIÇÃO ADERENTE */
         .rodape {
             position: sticky;
             bottom: 0;
@@ -98,24 +98,24 @@
 <body>
 
     <div class="menu">
-        MUNDO DOS GAMES
+        MUNDO DOS JOGOS
     </div>
 
     <div class="titulo">
-        <h1>Bem-vindo ao Mundo dos Games!</h1>
-        <p>Conheça nosso universo gamer.</p>
+        <h1>Bem-vindo ao Mundo dos Jogos!</h1>
+        <p>Conheça nosso universo de diversão.</p>
     </div>
 
     <h2 style="margin: 40px 20px 10px;">
-        Position Static
+        Posição Padrão
     </h2>
 
     <div class="caixa1">
-        Esta é uma div com posicionamento padrão.
+        Esta é uma divisão com posicionamento padrão.
     </div>
 
     <h2 style="margin: 20px;">
-        Position Absolute
+        Posição Absoluta
     </h2>
 
     <div class="container">
@@ -125,28 +125,28 @@
     </div>
 
     <h2 style="margin: 20px;">
-        Display Flex
+        Organização Flexível
     </h2>
 
     <div class="jogos">
         <div class="jogo">Minecraft</div>
         <div class="jogo">GTA</div>
-        <div class="jogo">FIFA</div>
+        <div class="jogo">Futebol</div>
     </div>
 
     <h2 style="margin: 20px;">
-        Display Grid
+        Organização em Grade
     </h2>
 
-    <div class="grid">
+    <div class="grade">
         <div class="item">Ação</div>
         <div class="item">Aventura</div>
         <div class="item">Corrida</div>
-        <div class="item">Esporte</div>
+        <div class="item">Esportes</div>
     </div>
 
     <div class="rodape">
-        Projeto HTML e CSS - 2026
+        Projeto de HTML e CSS - 2026
     </div>
 
 </body>
