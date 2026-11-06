@@ -21,7 +21,7 @@
 
         <h2>Cadastro de Jogadores</h2>
 
-       <form onsubmit="enviarFormulario(event)">
+        <form onsubmit="enviarFormulario(event)">
 
             <fieldset>
                 <legend>Dados pessoais</legend>
@@ -63,29 +63,8 @@
                 </div>
 
                 <div class="campo">
-                    <label for="datahora">Data e horário:</label>
-                    <input type="datetime-local" id="datahora" name="datahora">
-                </div>
-
-                <div class="campo">
                     <label for="mes">Mês de aniversário:</label>
                     <input type="month" id="mes" name="mes">
-                </div>
-
-                <div class="campo">
-                    <label for="semana">Semana de início:</label>
-                    <input type="week" id="semana" name="semana">
-                </div>
-
-                <div class="campo">
-                    <label for="site">Seu perfil gamer:</label>
-                    <input type="url" id="site" name="site"
-                    placeholder="https://exemplo.com">
-                </div>
-
-                <div class="campo">
-                    <label for="pesquisa">Pesquisar jogo:</label>
-                    <input type="search" id="pesquisa" name="pesquisa">
                 </div>
 
             </fieldset>
@@ -151,19 +130,6 @@
                 </div>
 
                 <div class="campo">
-                    <label for="jogo">Jogo favorito:</label>
-
-                    <input type="text" id="jogo" name="jogo" list="lista-jogos">
-
-                    <datalist id="lista-jogos">
-                        <option value="Minecraft">
-                        <option value="GTA">
-                        <option value="FIFA">
-                        <option value="Fortnite">
-                    </datalist>
-                </div>
-
-                <div class="campo">
                     <label for="plataforma-principal">
                         Plataforma principal:
                     </label>
@@ -179,7 +145,6 @@
 
             </fieldset>
 
-            <!-- Informações adicionais -->
             <fieldset>
                 <legend>Informações adicionais</legend>
 
@@ -204,24 +169,29 @@
                 </div>
 
             </fieldset>
-            
 
-         <div class="botoes">
-             
-           <button width="100" height="40" type="submit">Enviar</button>
-           
-         </div>
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+            </div>
+
         </form>
+
         <div id="mensagem"></div>
-        <script>
-    function enviarFormulario(event) {
-        event.preventDefault();
 
-        document.getElementById("mensagem").innerHTML =
-        "Cadastro realizado com sucesso!";
+    </div>
 
-        document.querySelector("form").reset();
-    }
-</script>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+
+            document.getElementById("mensagem").innerHTML =
+                "Cadastro realizado com sucesso!";
+
+            document.querySelector("form").reset();
+        }
+    </script>
+
 </body>
 </html>
+
